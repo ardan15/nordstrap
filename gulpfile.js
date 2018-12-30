@@ -196,20 +196,20 @@ gulp.task('copy-assets', function () {
     ////////////////// End Bootstrap 4 Assets /////////////////////////
 
     // Copy all Font Awesome Fonts
-    gulp.src(paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}')
-        .pipe(gulp.dest('./fonts'));
+    gulp.src(paths.node + '@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,woff2,eot,svg}')
+        .pipe(gulp.dest('./webfonts'));
 
     // Copy all Font Awesome SCSS files
-    gulp.src(paths.node + 'font-awesome/scss/*.scss')
+    gulp.src(paths.node + '@fortawesome/fontawesome-free/scss/*.scss')
         .pipe(gulp.dest(paths.dev + '/sass/fontawesome'));
 
     // _s SCSS files
-    gulp.src(paths.node + 'undescores-for-npm/sass/media/*.scss')
-        .pipe(gulp.dest(paths.dev + '/sass/underscores'));
+    // gulp.src(paths.node + 'undescores-for-npm/sass/media/*.scss')
+    //     .pipe(gulp.dest(paths.dev + '/sass/underscores'));
 
     // _s JS files into /src/js
-    gulp.src(paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js')
-        .pipe(gulp.dest(paths.dev + '/js'));
+    // gulp.src(paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js')
+    //     .pipe(gulp.dest(paths.dev + '/js'));
 });
 
 // Deleting the files distributed by the copy-assets task

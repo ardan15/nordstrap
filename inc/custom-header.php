@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Wordstrap
+ * @package Nordstrap
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses wordstrap_header_style()
+ * @uses nordstrap_header_style()
  */
-function wordstrap_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'wordstrap_custom_header_args', array(
+function nordstrap_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'nordstrap_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'wordstrap_header_style',
+		'wp-head-callback'       => 'nordstrap_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'wordstrap_custom_header_setup' );
+add_action( 'after_setup_theme', 'nordstrap_custom_header_setup' );
 
-if ( ! function_exists( 'wordstrap_header_style' ) ) :
+if ( ! function_exists( 'nordstrap_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see wordstrap_custom_header_setup().
+	 * @see nordstrap_custom_header_setup().
 	 */
-	function wordstrap_header_style() {
+	function nordstrap_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

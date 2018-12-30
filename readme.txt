@@ -1,4 +1,4 @@
-=== Wordstrap ===
+=== Nordstrap ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Wordstrap.
+A starter theme called Nordstrap.
 
 == Description ==
 
-Wordstrap base theme framework
+Wordpress base theme framework
 
 == Installation ==
 
@@ -25,11 +25,12 @@ Wordstrap base theme framework
 
 = Does this theme support any plugins? =
 
-Wordstrap includes support for Infinite Scroll in Jetpack.
+Nordstrap includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-
+= 1.0 - May 12 2015 =
+* Initial release
 
 == Credits ==
 

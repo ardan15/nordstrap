@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Wordstrap
+ * @package Nordstrap
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wordstrap' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nordstrap' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -37,15 +37,15 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$wordstrap_description = get_bloginfo( 'description', 'display' );
-			if ( $wordstrap_description || is_customize_preview() ) :
+			$nordstrap_description = get_bloginfo( 'description', 'display' );
+			if ( $nordstrap_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $wordstrap_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $nordstrap_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wordstrap' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nordstrap' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
