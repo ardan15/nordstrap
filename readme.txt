@@ -29,8 +29,7 @@ Wordstrap includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
-* Initial release
+
 
 == Credits ==
 
