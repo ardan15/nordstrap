@@ -120,12 +120,14 @@ add_action( 'widgets_init', 'nordstrap_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nordstrap_scripts() {
-	wp_enqueue_style( 'nordstrap-style', get_stylesheet_uri() );
+	$the_theme = wp_get_theme();
+	$theme_version = $the_theme->get('Version');
 
-	wp_enqueue_script( 'nordstrap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'nordstrap-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	$css_version = $theme_version . '.' . filemtime(get_template_directory() . '/css/theme.min.css');
+	wp_enqueue_style( 'nordstrap-styles', get_stylesheet_directory_uri() . '/css/theme.min.css', array(), $css_version );
+	
+	$js_version = $theme_version . '.' . filemtime(get_template_directory() . '/js/theme.min.js');
+	wp_enqueue_script( 'mofomofa-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $js_version, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
