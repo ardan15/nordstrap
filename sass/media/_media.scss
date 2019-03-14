@@ -19,6 +19,42 @@ object {
 	display: inline-block;
 }
 
+.hentry {
+	.entry-content,
+	.entry-summary {
+		.has-drop-cap {
+			margin-bottom: 1.5rem;
+		}
+
+		.has-drop-cap:not(:focus):first-letter {
+			font-size: 3.4em;
+			line-height: 1;
+			font-weight: bold;
+			margin: 0 0.25em 0 0;
+		}
+
+		> *.alignfull {
+			position: relative;
+			left: -1rem;
+			width: calc(100% + (2 * 1rem));
+			max-width: calc(100% + (2 * 1rem));
+			clear: both;
+
+			@media only screen and (min-width: 768px) {
+				margin-top: calc(2 * 1rem);
+				margin-bottom: calc(2 * 1rem);
+				left: calc(-15% - 80px);
+				width: calc(150% + 15px);
+				max-width: calc(150% + 15px);
+			}
+		}
+
+	}
+
+	
+}
+
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
